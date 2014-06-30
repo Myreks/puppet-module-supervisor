@@ -108,6 +108,7 @@ class supervisor(
   $autoupgrade              = false,
   $service_ensure           = 'running',
   $service_enable           = true,
+  $unix_http_server_owner   = 'vagrant:vagrant',
   $enable_inet_server       = false,
   $inet_server_port         = '*:9000',
   $inet_server_user         = undef,

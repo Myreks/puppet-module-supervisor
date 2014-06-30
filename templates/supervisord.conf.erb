@@ -1,5 +1,6 @@
 [unix_http_server]
 file=/var/run/supervisor.sock   ; (the path to the socket file)
+owner=<%= @unix_http_server_owner %>
 
 <% if @enable_inet_server -%>
 [inet_http_server]
